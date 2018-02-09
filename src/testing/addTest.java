@@ -1,14 +1,15 @@
 package testing;
 
-import static org.junit.jupiter.api.Assertions.*;
+//import static org.junit.jupiter.api.Assertions.*;
 
-import org.junit.jupiter.api.Test;
+//import org.junit.jupiter.api.Test;
 
 import calculator.calculatorModel;
 
+@SuppressWarnings("unused")
 class addTest {
 
-	@Test
+	//@Test
 	void test() {
 		calculatorModel test=new calculatorModel();
 		test.addtion(5, 7);;

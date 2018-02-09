@@ -1,14 +1,15 @@
 package testing;
 
-import static org.junit.jupiter.api.Assertions.*;
+//import static org.junit.jupiter.api.Assertions.*;
 
-import org.junit.jupiter.api.Test;
+//import org.junit.jupiter.api.Test;
 
 import calculator.calculatorModel;
 
+@SuppressWarnings("unused")
 class divisionTest {
 
-	@Test
+	//@Test
 	void test() {
 		calculatorModel test=new calculatorModel();
 		test.div(5, 0);
