@@ -1,14 +1,14 @@
 package testing;
 
-//import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.*;
 
-//import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Test;
 
 import calculator.calculatorModel;
 
 class sqrTest {
 
-	//@Test
+	@Test
 	void test() {
 		calculatorModel test=new calculatorModel();
 		test.sqr(-4);
