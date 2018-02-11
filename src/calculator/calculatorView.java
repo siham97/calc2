@@ -1,11 +1,11 @@
 package calculator;
 import java.awt.Font;
+import java.awt.Window;
 import java.awt.event.*;
 import javax.swing.*;
 
 public class calculatorView extends JFrame {
 	 private JTextField textField=new JTextField(19);
-
 	 private JButton btn7= new JButton("7");
 
 
@@ -32,11 +32,11 @@ public class calculatorView extends JFrame {
 
 
 
-calculatorView(){
+public calculatorView(){
 	JPanel calcPanel=new JPanel();
 	this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	this.setSize( 250,275);
-	calcPanel.add(textField);
+	calcPanel.add(getTextField());
 	
 	btnclear.setFont(new Font("Tahoma", Font.BOLD, 13));
 	btnclear.setBounds(66, 46, 50, 50);
@@ -128,68 +128,68 @@ this.add(calcPanel);
 
 public double getfirstnum() {
 	
-	return Double.parseDouble(textField.getText());
+	return Double.parseDouble(getTextField().getText());
 	
 } 
 public double getsecondnum() {
-	return Double.parseDouble(textField.getText());
+	return Double.parseDouble(getTextField().getText());
 
 } 
 
 public void clear() {
-	textField.setText(null);
+	getTextField().setText(null);
 }
 
 public void setcalcsoluiton(double solution) {
-	textField.setText(Double.toString(solution));
+	getTextField().setText(Double.toString(solution));
 	
 	
 }
 
 public void set8() {
-	String EnterNum=textField.getText()+btn8.getText();
-	textField.setText(EnterNum);
+	String EnterNum=getTextField().getText()+btn8.getText();
+	getTextField().setText(EnterNum);
 }
 public void set9() {
-	String EnterNum=textField.getText()+btn9.getText();
-	textField.setText(EnterNum);
+	String EnterNum=getTextField().getText()+btn9.getText();
+	getTextField().setText(EnterNum);
 }
 public void set6() {
-	String EnterNum=textField.getText()+btn6.getText();
-	textField.setText(EnterNum);
+	String EnterNum=getTextField().getText()+btn6.getText();
+	getTextField().setText(EnterNum);
 }
 public void set5() {
-	String EnterNum=textField.getText()+btn5.getText();
-	textField.setText(EnterNum);
+	String EnterNum=getTextField().getText()+btn5.getText();
+	getTextField().setText(EnterNum);
 }
 public void set4() {
-	String EnterNum=textField.getText()+btn4.getText();
-	textField.setText(EnterNum);
+	String EnterNum=getTextField().getText()+btn4.getText();
+	getTextField().setText(EnterNum);
 }
 public void set3() {
-	String EnterNum=textField.getText()+btn3.getText();
-	textField.setText(EnterNum);
+	String EnterNum=getTextField().getText()+btn3.getText();
+	getTextField().setText(EnterNum);
 }
 public void set2() {
-	String EnterNum=textField.getText()+btn2.getText();
-	textField.setText(EnterNum);
+	String EnterNum=getTextField().getText()+btn2.getText();
+	getTextField().setText(EnterNum);
 }
 public void set1() {
-	String EnterNum=textField.getText()+btn1.getText();
-	textField.setText(EnterNum);
+	String EnterNum=getTextField().getText()+btn1.getText();
+	getTextField().setText(EnterNum);
 }
 public void set0() {
-	String EnterNum=textField.getText()+btn0.getText();
-	textField.setText(EnterNum);
+	String EnterNum=getTextField().getText()+btn0.getText();
+	getTextField().setText(EnterNum);
 }
 public void setdot() {
-	String EnterNum=textField.getText()+btndot.getText();
-	textField.setText(EnterNum);
+	String EnterNum=getTextField().getText()+btndot.getText();
+	getTextField().setText(EnterNum);
 }
 
 public void set7() {
-	String EnterNum=textField.getText()+btn7.getText();
-	textField.setText(EnterNum);
+	String EnterNum=getTextField().getText()+btn7.getText();
+	getTextField().setText(EnterNum);
 }
 
 
@@ -282,6 +282,22 @@ void displayErrorMessage(String errorMessage)
 {
 	
 	JOptionPane.showMessageDialog(this,errorMessage);	}
+
+
+
+public JTextField getTextField() {
+	return textField;
+}
+
+
+
+public void setTextField(JTextField textField) {
+	this.textField = textField;
+}
+
+
+
+
 
 
 

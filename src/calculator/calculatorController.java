@@ -17,6 +17,7 @@ this.theModel=theModel;
  this.theView.addadditionListener(new additionListener());
  this.theView.addsubListener(new subListener());
  this.theView.addsqrListener(new sqrListener());
+this.theView.getTextField().setEditable(false);
 
  this.theView.addmulListener(new mulListener());
  this.theView.adddivListener(new divListener());
