@@ -62,7 +62,8 @@ public class Test1 {
              
 
       System.out.println(ex);
-           c2.displayErrorMessage("not accept string ");
+		System.out.println("not accept string");
+
 
              
 

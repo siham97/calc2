@@ -24,7 +24,7 @@ public void div(double first,double second) {
 	}
 	 
 	else {
-		JOptionPane.showMessageDialog(null, " can't division over zero");
+		System.out.println("cant division over zero");
 
 	}
 	  
@@ -43,8 +43,7 @@ public void mod(double first,double second) {
 	
 	 
 		else {
-			JOptionPane.showMessageDialog(null, " can't division over zero");
-
+System.out.println("cant division over zero");
 		}
 		  
 }
@@ -53,7 +52,7 @@ public void sqr(double first) {
 	if(first>=0) {
 	  calcValue=Math.sqrt(first);}
 	else {
-		JOptionPane.showMessageDialog(null, " invalid input");
+		System.out.println("ivalid input");
 
 	}
 
